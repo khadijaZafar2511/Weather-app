@@ -57,20 +57,23 @@ export default function Countrysearch(props) {
         >
           <img
             className=" h-[4vh] w-[4vh] border border-none rounded-full object-fit object-cover "
-            src="/SEARCH.png"
+            src="\src\assets/SEARCH.png"
           ></img>
         </button>
         <div className=" mt-10 w-[60vh] h-[70vh] flex flex-col items-center">
           <div className="w-[5vh] h-[5vh]">
             {loading && (
-              <img className=" w-[5vh] h-[5vh]" src="/animated-gif.gif"></img>
+              <img
+                className=" w-[5vh] h-[5vh]"
+                src="\src\assets/animated-gif.gif"
+              ></img>
             )}
           </div>
 
           <img
             className="h-[20vh] w-[25vh] border border-none "
             src={
-              weather ? weather.current.condition.icon : "/cloud2.png"
+              weather ? weather.current.condition.icon : "srcassets/cloud2.png"
             }
           ></img>
           <h1 className="text-white font-normal text-7xl">
@@ -81,14 +84,20 @@ export default function Countrysearch(props) {
           </h1>
           <div className="h-[20vh] w-full flex">
             <div className="h-[20vh] w-1/2  mt-2 text-2xl text-white flex justify-center items-center ">
-              <img className="h-[3vh] w-[3vh] mr-2" src="/humidity.png"></img>
+              <img
+                className="h-[3vh] w-[3vh] mr-2"
+                src="\src\assets/humidity.png"
+              ></img>
               <div>
                 <p>{weather ? weather.current.humidity : ""}%</p>
                 <p className="text-sm">humiditity</p>
               </div>
             </div>
             <div className="h-[20vh] w-1/2  mt-2 text-xl text-white flex justify-center items-center ">
-              <img className="h-[3vh] w-[3vh] mr-2" src="/ws.png"></img>
+              <img
+                className="h-[3vh] w-[3vh] mr-2"
+                src="\src\assets\ws.png"
+              ></img>
               <div>
                 <p>{weather ? weather.current.wind_kph : ""} km/h</p>
                 <p className="text-sm">wind speed</p>

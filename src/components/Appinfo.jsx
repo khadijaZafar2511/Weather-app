@@ -12,10 +12,11 @@ export default function Appinfo(props) {
           <h1 className="font-normal text-[rgba(83,166,175,1)]  text-3xl flex">
             <p className="text-white ">using</p>react.js
           </h1>
-          <img className="h-[20vh] w-[30vh]  ml-25 mt-2" src="/cloud2.png"></img>
+          <img
+            className="h-[20vh] w-[30vh]  ml-25 mt-2"
+            src="\src\assets/cloud2.png"
+          ></img>
         </div>
-
-       
       </>
     );
 }
