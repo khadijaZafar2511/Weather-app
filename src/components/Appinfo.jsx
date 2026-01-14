@@ -14,7 +14,7 @@ export default function Appinfo(props) {
           </h1>
           <img
             className="h-[20vh] w-[30vh]  ml-25 mt-2"
-            src="\public\cloud2.png"
+            src="\cloud2.png"
           ></img>
         </div>
       </>
