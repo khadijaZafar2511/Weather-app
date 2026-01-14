@@ -68,15 +68,17 @@ export default function Countrysearch(props) {
           ></img>
         </button>
         <div className=" mt-10 w-[60vh] h-[70vh] flex flex-col items-center">
-          
-            <div className='w-[5vh] h-[5vh]'>
-            {loading && <img className=" w-[5vh] h-[5vh]" src="/animated-gif.gif"></img>}
-            </div>
-          
+          <div className="w-[5vh] h-[5vh]">
+            {loading && (
+              <img className=" w-[5vh] h-[5vh]" src="/animated-gif.gif"></img>
+            )}
+          </div>
 
           <img
-            className="h-[20vh] w-[20vh] border border-none "
-            src={weather ? weather.current.condition.icon : "textutils/cloud2.png"}
+            className="h-[20vh] w-[25vh] border border-none "
+            src={
+              weather ? weather.current.condition.icon : "/cloud2.png"
+            }
           ></img>
           <h1 className="text-white font-normal text-7xl">
             {weather ? weather.current.temp_c : ""}℃
