@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useState, useEffect } from "react";
 
-
-
 export default function Countrysearch(props) {
     const [q, setq] = useState(null);
   const [weather, setWeather] = useState(null);
@@ -14,29 +12,24 @@ export default function Countrysearch(props) {
   const handlerinput = (e) => { 
     setValue(e.target.value);
 }
-
   const handlerclickbtn = (e) => {
     console.log("cliked");
     setInput(value);
-    
-  
-   
-   
   }
   const handlerkeydown = (e) => {
     if (e.key === "Enter") {
       setInput(value);
-      console.log(input);
-      
-        
+      console.log(input);   
       
     }
   }
+     const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+     console.log(import.meta.env.VITE_WEATHER_API_KEY);
+  useEffect(() => {
    
-
-   useEffect(() => {
-     async function fetchweather() {
-       let url = ` https://api.weatherapi.com/v1/current.json?key=6fa1d6ed48f6490c89754432252212&q=${input ? input : "Pakistan"}&aqi=yes`;
+    async function fetchweather() {
+  
+       let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${input ? input : "Pakistan"}&aqi=yes`;
        setLoading(true);
          let value1 = await fetch(url);
          const data = await value1.json();
@@ -46,7 +39,7 @@ export default function Countrysearch(props) {
        setLoading(false);
      });
      
-   }, [input]);
+   }, [input,apiKey]);
    
   return (
     <>
