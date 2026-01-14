@@ -15,17 +15,21 @@ export default function Countrysearch(props) {
     setValue(e.target.value);
 }
 
-  const handlerclickbtn = () => {
+  const handlerclickbtn = (e) => {
     console.log("cliked");
     setInput(value);
-    console.log(input);
+    
+  
+   
    
   }
   const handlerkeydown = (e) => {
     if (e.key === "Enter") {
-      console.log("cliked");
       setInput(value);
       console.log(input);
+      
+        
+      
     }
   }
    

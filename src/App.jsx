@@ -1,10 +1,8 @@
 import './App.css'
 import Appinfo from './components/Appinfo.jsx';
-import Countrysearch from './components/countrySearch.jsx';
+import Countrysearch from './components/Countrysearch.jsx';
 
 function App() {
- 
-
  
   return (
 
