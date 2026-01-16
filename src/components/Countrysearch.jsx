@@ -43,13 +43,13 @@ export default function Countrysearch(props) {
    
   return (
     <>
-      <div className=" flex flex-wrap justify-center  w-[60vh]  h-[80vh]  bg-gradient-to-b from-[rgb(103,241,167)] to-[rgba(83,166,175,1)]  border rounded-lg ">
+      <div className=" flex flex-wrap justify-center lg:w-2/7 w-4/5 h-[80vh]  bg-gradient-to-b from-[rgb(103,241,167)] to-[rgba(83,166,175,1)]  border rounded-lg ">
         <input
           onInput={handlerinput}
           onKeyDown={handlerkeydown}
           type="search"
           placeholder="  Search here..."
-          className="h-[8vh] w-[40vh] bg-white mt-3 border border-gray-300 rounded-full active: outline-none"
+          className="h-[8vh] lg:w-[40vh] w-4/5 bg-white mt-3 border border-gray-300 rounded-full active: outline-none"
         ></input>
         <button
           onClick={handlerclickbtn}

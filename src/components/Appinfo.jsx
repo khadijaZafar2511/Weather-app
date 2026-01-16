@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export default function Appinfo(props) {
     return (
       <>
-        <div className="w-1/2 h-[80vh] ml-15 mb-20 text-green-500 flex flex-col justify-center">
+        <div className="w-1/2 md:h-[80vh] h-1/2 ml-15 mb-20 text-green-500 flex flex-col items-center justify-center">
           <h1 className="font-medium text-6xl flex ml-10 ">
             Weather<p className="text-white ">App</p>
           </h1>
