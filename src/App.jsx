@@ -7,7 +7,7 @@ function App() {
   return (
 
     <>
-      <div className="w-full h-full bg-gray-900 flex items-center justify-center flex-col lg:flex-row">
+      <div className="w-full  min-h-screen overflow-x-hidden bg-gray-900 flex items-center justify-center flex-col lg:flex-row">
         <Appinfo url="//cdn.weatherapi.com/weather/64x64/night/143.png" />
         <Countrysearch  />
       </div>
