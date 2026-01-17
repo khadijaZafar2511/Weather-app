@@ -43,7 +43,7 @@ export default function Countrysearch(props) {
    
   return (
     <>
-      <div className=" flex flex-wrap justify-center lg:w-2/7 w-4/5 h-[80vh]  bg-gradient-to-b from-[rgb(103,241,167)] to-[rgba(83,166,175,1)]  border rounded-lg ">
+      <div className=" flex flex-wrap justify-center lg:w-2/7 w-6/7 h-[80vh]  bg-gradient-to-b from-[rgb(103,241,167)] to-[rgba(83,166,175,1)]  border rounded-lg ">
         <input
           onInput={handlerinput}
           onKeyDown={handlerkeydown}
